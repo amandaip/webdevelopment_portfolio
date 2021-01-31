@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Raleway+Dots&display=swap");
+/*font-family: 'Raleway Dots', cursive;*/
+/* My first attempt at Sass */
+body {
+  background-color: #99ccff;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 160px 160px 160px 160px 160px 160px 160px;
+      grid-template-columns: 160px 160px 160px 160px 160px 160px 160px;
+  -ms-grid-rows: 130px 130px 130px 130px 130px 130px 130px;
+      grid-template-rows: 130px 130px 130px 130px 130px 130px 130px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.box {
+  text-align: center;
+  margin: 5px;
+}
+
+.halfbox {
+  /*swatch_half */
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.box .white_words a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.box .black_words a {
+  color: #990000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+.redlight {
+  background-color: #ff6666;
+}
+
+.reddark {
+  background-color: #990000;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.blacklight {
+  background-color: #333333;
+}
+
+.blackdark {
+  background-color: black;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.whitelight {
+  background-color: white;
+}
+
+.whitedark {
+  background-color: #cccccc;
+}
+
+.blue {
+  background-color: #3399ff;
+}
+
+.bluelight {
+  background-color: #99ccff;
+}
+
+.bluedark {
+  background-color: #0066cc;
+}
+
+h1 {
+  font-family: Lalezar, cursive;
+  color: #990000;
+  font-weight: 1400;
+  font-size: 2.5em;
+  margin: 10px;
+}
+
+h2 {
+  font-family: Lalezar, cursive;
+  color: #0066cc;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+h3 {
+  font-family: Lalezar, cursive;
+  color: #0066cc;
+  font-style: italic;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-family: Neucha, cursive;
+  color: #000000;
+  font-size: 25px;
+  margin: 10px;
+}
+
+#white {
+  font-family: Neucha, cursive;
+  color: #ffffff;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.column_left_row1, .column_left_row2, .column_left_row6, .column_left_row7 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+}
+
+.column_right_row1, .column_right_row2, .column_right_row6, .column_right_row7 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5 / span 2;
+}
+
+.column1lefttop {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+}
+
+.row1lefttop {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: 1/2/4/2;
+}
+
+.row8righttop {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 7 / 4 / 8;
+}
+
+.column_middle3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: 3 / 3 / 4 / 6;
+}
+
+.column_left_row4 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 4/1/5/4;
+}
+
+.column_right_row4 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: 4/5/5/8;
+}
+
+.column_middle3_row5 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: 5/3/6/6;
+}
+
+.row1leftbottom {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5/1/7/2;
+}
+
+.row8leftbottom {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-area: 5/7/7/8;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.box2 {
+  width: 25em;
+  height: 25em;
+  margin: 5px;
+  border: 5px;
+  border-style: solid none;
+}
+
+/*hamburger*/
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: #00d676;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 100px;
+  /*menu width*/
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  font-family: 'Raleway Dots', cursive;
+  font-weight: bold;
+}
+
+#menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+/*# sourceMappingURL=online_store.css.map */

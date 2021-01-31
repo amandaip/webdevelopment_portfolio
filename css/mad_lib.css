@@ -1,0 +1,18 @@
+body {
+    margin: 10%;
+    background-image: linear-gradient(purple, yellow);
+    color: white;
+    font-family: 'Syne Tactile', cursive;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h6 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 15px;
+  }

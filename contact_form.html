@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Vote for Dark Phoenix</title>
+    <link rel="stylesheet" href="css/contact_form.css" />
+    <style>
+    </style>
+  </head>
+  <body>
+
+ 
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="projects.html"><li>Projects</li></a>
+          <a href="contact.html"><li>Contact</li></a> 
+        </ul>
+      </div>
+    </nav>
+  
+    <header>
+      <h1>Vote for Dark Phoenix as Your Favorite Character in X-MEN</h1>
+    </header>
+    
+ 		<main>
+ 
+    <div class="body-container">
+     	<form action="process_contact.php" method="post">
+     	<p id="red-color">* Required Field</p>
+       	<div class="sections">
+         	 <label id="name-label" for="first_name">1. First Name: <p id="red-color">*</p> </label>
+        </div>
+        <div class="response">
+          <input class="input-text" type="text" id="first_name" name="first_name" placeholder="Enter your first name here" required autofocus>
+        </div>
+        
+         <div class="sections">
+          <label id="name-label" for="last_name">2. Last Name: <p id="red-color">*</p> </label>
+        </div>
+        <div class="response">
+          <input class="input-text" type="text" id="last_name" name="last_name" placeholder="Enter your last name here" required>
+        </div>
+        
+        <div class="sections">
+          <label id="email-label" for="email">3. Email: <p id="red-color">*</p> </label>
+        </div>
+        <div class="response">
+          <input class="input-text" type="email" id="email" name="email" placeholder="xxxxx@example.com" required>
+        </div>
+
+        <div class="sections">
+          <label for="gender">4. Gender: <p id="red-color">*</p></label>
+        </div>
+        
+        <div class="response">
+          <select class="input-text" id="gender" name="gender" required>
+          <option disabled value selected>Select an option</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="prefer_not_to_say">Prefer Not to Say</option>
+          </select>
+        </div>
+          
+        <br>
+          
+        <div class="sections">
+          <label>5. Your age: <p id="red-color">*</p> </label>
+        </div>
+        <div class="response">
+            <label><input type="radio" name="age" value="<21" required>(younger than 21)</label><br>
+            <label><input type="radio" name="age" value="21-30">(between 21 to 30)</label><br>
+            <label><input type="radio" name="age" value="31-40">(between 31 to 40)</label><br>
+            <label><input type="radio" name="age" value="41-50">(between 41 to 50)</label><br>
+            <label><input type="radio" name="age" value="51-60">(between 51 to 60)</label><br>
+            <label><input type="radio" name="age" value=">60">(older than 60)</label><br>
+        </div>
+        
+        <div class="sections">
+          <label>6. Interests:<br>(Check all that apply):</label>
+        </div>
+        <div class="response">
+          <label><input type="checkbox" name="interest_one" value="dark phoenix's superpower">Dark Phoenix's Superpower</label><br>
+          <label><input type="checkbox" name="interest_two" value="dark phoenix's outfit">Dark Phoenix's Outfit</label><br>
+          <label><input type="checkbox" name="interest_three" value="dark phoenix's personalities">Dark Phoenix's Personalities</label><br>
+          <label><input type="checkbox" name="interest_four" value="dark phoenix's characteristics">Dark Phoenix's Characteristics</label><br>
+        </div>
+        
+        <br>
+        
+        <div class="sections">
+          <label id="number-label" for="number">7. Contribution Amount:</label>
+        </div>
+        
+        <div class="response">  
+          $<input type="number" class="input-text" name="amount" id="number" min="0" max="999999999999" placeholder="0"/>  
+        </div>
+        <br>
+        
+        <div class="sections">
+          <label>8. Sign up for our mailing list?</label>
+        </div>
+        <div class="response">
+          <label><input type="checkbox" name="mailing_list" value="Yes"></label><br>
+        </div>
+        
+        <div class="sections">
+          <label for="comments">9. Comments:</label>
+          </div>
+        <div class="response">
+          <textarea class="input-text" id="comments" name="comments" rows="10" cols="40" placeholder="Your comments start from here......"></textarea>
+        </div>
+        
+        <div class="btn">
+          <button id="submit" type="submit" value="Submit">Submit</button>
+          <button id="reset" type="reset" value="Reset">Reset</button>
+        </div>
+        
+        
+    </form>
+    </div>
+ 
+  </main>
+  <footer><p>Copyright &copy; 2020 Amanda Ip. All rights reserved.</p></footer>
+    
+  </body>
+  
+</html>

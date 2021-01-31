@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Raleway+Dots&display=swap');
+
+
+/*font-family: 'Raleway Dots', cursive;*/
+
+body {
+  background: linear-gradient(rgba(60, 70, 150, 0.5), rgba(130, 130, 200, 0.7)), url(https://i.ibb.co/zhshd5T/Dark-Phoenix.jpg) center no-repeat fixed;
+  background-size: cover;
+}
+
+header {
+  background: rgba(204,255,0,0.2);
+  width: 68em;
+  height: 70px;
+  position: sticky;
+  top: 0; 
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+
+h1 {
+  font-family: 'Raleway Dots', cursive;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main {
+  margin: 0 2em 0 2em;
+}
+
+p {
+  font-family: 'Raleway Dots', cursive;
+  font-weight: bold;
+}
+
+#red-color {
+  display: inline-block;
+  color: red;
+  
+}
+
+footer {
+  background: linear-gradient(90deg, rgba(0,204,153,0.2), rgba(204,153,255,0.2), rgba(255,255,102,0.2));
+  width: 40em;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1em; 
+  font-family: 'Raleway Dots', cursive;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.body-container {
+  background-color: rgba(0,102,255,0.2);
+  border-radius: 20px;
+  width: 50em;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  color: #ffffff;
+  font-family: 'Raleway Dots', cursive;
+  font-weight: bold; 
+  font-size: 20px;
+}
+
+.sections {
+  text-align: left;
+  margin: 0 0 0 12em;
+}
+
+.response {
+  text-align: center;
+}
+
+.input-text {
+  display: inline-block;
+  width: 50%;
+  padding: 5px;
+  margin: 25px 0 25px 10px;
+  border: 1px solid #ff1aff;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+  margin: 10px;
+}
+
+.btn {
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background-color: #ffff66;
+  border-radius: 30px;
+  color: #996600;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 10px 15px;
+  border: 3px solid;
+  border-color: #cc33ff;
+}
+
+button:hover {
+  background-color: #ff9999;
+}
